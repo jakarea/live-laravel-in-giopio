@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oak website</title>
+    <!-- swiper-js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- swiper-js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/product-details-modal.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- nav-secion -->
+    <div class="header-all">
+        <!-- product-details-modal -->
+        <div class="product-details-modal">
+            <div class="ghf">
+                <div class="product-modal-all">
+                    <div class="product-modal-item">
+                        <div class="modal-title">
+                            <h3 class="font-jakarta">Added to cart</h3>
+                            <span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z" stroke="#55C790" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <a href="product-details.html">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13L13 1M1 1L13 13" stroke="#687588" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </a>
+                    </div>
+                    <div class="product-modal-all-item">
+                        <div class="cart-to-add-item">
+                            <div class="add-cart-text font-jakarta">
+                                <img src="assets/img/add-cart-img.jpg" alt="img">
+                                <div class="">
+                                    <h4>Brindisa Classic<br>
+                                        Cheese Box
+                                    </h4>
+                                    <p>Spain <span>75cl</span></p>
+                                </div>
+                            </div>
+                            <div class="add-cart-text font-jakarta">
+                                <div class="add-price">€998</div>
+                                <div class="add-cart-text add-cart-text-extra">
+                                    <div class="add-cart-btn"><span>-</span></div>
+                                    <div class="add-cart-btn add-cart-btn-extra">5</div>
+                                    <div class="add-cart-btn"><span>+</span></div>
+                                </div>
+                                <span class="cart-delet-icon">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="38" height="38" fill="#E9EAEC"/>
+                                        <path d="M24.25 15.25L23.5995 24.3569C23.5434 25.1418 22.8903 25.75 22.1033 25.75H15.8967C15.1097 25.75 14.4566 25.1418 14.4005 24.3569L13.75 15.25M17.5 18.25V22.75M20.5 18.25V22.75M21.25 15.25V13C21.25 12.5858 20.9142 12.25 20.5 12.25H17.5C17.0858 12.25 16.75 12.5858 16.75 13V15.25M13 15.25H25" stroke="#101828" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> 
+                                </span>
+                            </div>
+                        </div>
+    
+                        <div class="order-text font-jakarta">
+                            <p>5 Item Subtotal</p>
+                            <div class="to-order-button">
+                                <a href="#" class="to-order">To Order</a>
+                                <a href="#" class="continue-button">Continue Shopping</a>
+                            </div>
+                        </div>
+                        <div class="other-bought font-jakarta">
+                            <h4>Others Bought Too</h4>
+                        </div>
+    
+                        <div class="cart-to-add-item cart-to-add-item-extra">
+                            <div class="add-cart-text font-jakarta">
+                                <img src="assets/img/spanish-desserts.jpg" alt="img">
+                                <div class="">
+                                    <h4>Spanish Desserts</h4>
+                                    <p>Spain <span>75cl</span></p>
+                                    <div class="add-price add-price-unicq">€ 50.00</div>
+                                </div>
+                            </div>
+                            <a href="#" class="add-right-btn font-jakarta">ADD TO CART</a>
+                        </div>
+                        <div class="cart-to-add-item cart-to-add-item-extra new-cart">
+                            <div class="add-cart-text font-jakarta">
+                                <img src="assets/img/spanish-desserts.jpg" alt="img">
+                                <div class="">
+                                    <h4>Spanish Desserts</h4>
+                                    <p>Spain <span>75cl</span></p>
+                                    <div class="add-price add-price-unicq">€ 50.00</div>
+                                </div>
+                            </div>
+                            <a href="#" class="add-right-btn font-jakarta">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- product-datails-modal -->
+        <section class="nav-section">
+            <div class="nav">
+                <a href="#">
+                    <img class="logo" width="60px" height="60px" src="assets/img/logo.svg" alt="logo"> 
+                </a> 
+    
+                <input type="checkbox" id="check" name="nav-toggle"> 
+                <label for="check">
+                    <span class="menu">
+                        <img src="assets/img/icon/menu-icon.svg" alt="icon">
+                    </span>
+                    <span class="menu-close">
+                        <img src="assets/img/icon/menu-x.svg" alt="icon">
+                    </span>
+                </label>
+    
+                <ul class="nav-list-items">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Product</a>
+                    </li>
+                    <li>
+                        <a class="nav-active" href="#">Product Categories</a>
+                    </li>
+                    <li>
+                        <a href="#">Our Story</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </ul> 
+                <div class="nav-icons">
+                    <a href="#">
+                        <img width="23px" height="23px" src="assets/img/icon/ser-icon.svg" alt="icon">
+                    </a>
+                    <a href="#">
+                        <img width="23px" height="23px" src="assets/img/icon/user-icon.svg" alt="icon">
+                    </a>
+                    <a href="#">
+                        <img width="23px" height="23px" src="assets/img/icon/in-icon.svg" alt="icon">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- nav-secion -->
+        <!-- product-details-secion --> 
+        <section class="product-details-section">
+            <div class="container">
+                <div class="product-details-content font-jakarta">
+                    <div class="product-details-item font-jakarta"> 
+                        <div class="product-nav-list">
+                            <ul>
+                                <li><a href="#">Home /</a></li>
+                                <li><a href="#"> Category /</a></li>
+                                <li><a href="#"> Cheeses /</a></li>
+                                <li><a href="#"> Product-1</a></li>
+                            </ul>
+                        </div>  
+                        <div class="product-details">
+                            <div class="product-details-image"> 
+                                <div class="product-big-image">
+                                    <a href="#">
+                                        <img src="assets/img/product-img.jpg" alt="img"> 
+                                    </a>
+                                    <span class="zoom-icon">
+                                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="43" height="43" rx="21.5" stroke="#687588"/>
+                                            <g clip-path="url(#clip0_95_1067)">
+                                            <g filter="url(#filter0_d_95_1067)">
+                                            <path d="M29.5 29.5L26 26M21 18V21M21 21V24M21 21H24M21 21H18M28 21C28 24.866 24.866 28 21 28C17.134 28 14 24.866 14 21C14 17.134 17.134 14 21 14C24.866 14 28 17.134 28 21Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges"/>
+                                            </g>
+                                            </g>
+                                            <defs>
+                                            <filter id="filter0_d_95_1067" x="9.25" y="13.25" width="25" height="25" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                            <feOffset dy="4"/>
+                                            <feGaussianBlur stdDeviation="2"/>
+                                            <feComposite in2="hardAlpha" operator="out"/>
+                                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_95_1067"/>
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_95_1067" result="shape"/>
+                                            </filter>
+                                            <clipPath id="clip0_95_1067">
+                                            <rect width="24" height="24" fill="white" transform="translate(10 10)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>  
+                                    </span>
+                                </div>
+
+                                <div class="product-small-img">
+                                    <a href="#">
+                                        <img src="assets/img/product-img-02.jpg" alt="img">
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/img/product-img-02.jpg" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-details-text-extra">
+                                <div class="">
+                                    <h3 class="font-jakarta">Brindisa Classic Cheese Box</h3>
+                                    <p class="font-jakarta">€ 20.00 <span>€ 15.00</span></p> 
+                                    <div class="product-text-details">
+                                        <div class="product-details-left">
+                                            <div class="product-review">
+                                                <div class="product-star">
+                                                    <img src="assets/img/product-star.svg" alt="img">
+                                                    <img src="assets/img/product-star.svg" alt="img">
+                                                    <img src="assets/img/product-star.svg" alt="img">
+                                                    <img src="assets/img/product-star.svg" alt="img">
+                                                    <img src="assets/img/product-star.svg" alt="img">
+                                                </div>
+                                                <span class="">(35 Review)</span>
+                                            </div> 
+                                            <div class="payment">
+                                                <a href="#">
+                                                    <img src="assets/img/paypal.svg" alt="icon">
+                                                </a>
+                                                <a href="#">
+                                                    <img src="assets/img/stripe.svg" alt="icon">
+                                                </a>
+                                                <a href="#">
+                                                    <img src="assets/img/ideal.svg" alt="icon">
+                                                </a>
+                                            </div>
+                                            <div class="product-feature font-jakarta">
+                                                <h3>Product Features</h3>
+                                                <div class="product-feature-text">
+                                                    <div class="product-list">
+                                                        <div class="dot"></div>
+                                                        <span>Authentic chorizo criollo</span>
+                                                    </div>
+                                                    <div class="product-list">
+                                                        <div class="dot"></div>
+                                                        <span>Argentinian style</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+
+                                        <div class="product-details-right">
+                                            <div class="free-over">
+                                                <img src="assets/img/track-icon.svg" alt="icon">
+                                                <span class="font-jakarta">Free Over € 60</span>
+                                            </div>
+                                            <p class="font-jakarta">Standard Delivery <span>23 Apr - 28 Apr</span></p>
+                                        
+                                            <div class="product-variant">
+                                                <h5 class="font-jakarta">Product Variants</h5>
+                                                <div class="variant-item">
+                                                    <div class="redio-item">
+                                                        <label for="check-01" class="check-item">
+                                                            <input type="checkbox" id="check-01">  
+                                                            <div class="check-rounded"></div>  
+                                                            <div>300 ml</div>
+                                                        </label> 
+                                                    </div>
+                                                    <div class="redio-item">
+                                                        <label for="check-02" class="check-item">
+                                                            <input type="checkbox" id="check-02">  
+                                                            <div class="check-rounded"></div>  
+                                                            <div>500 ml</div>
+                                                        </label> 
+                                                    </div>
+                                                    <div class="redio-item">
+                                                        <label for="check-03" class="check-item">
+                                                            <input type="checkbox" id="check-03">  
+                                                            <div class="check-rounded"></div>  
+                                                            <div>750 ml</div>
+                                                        </label> 
+                                                    </div> 
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-add-button font-jakarta">
+                                        <div class="product-add">
+                                            <div class="product-add-item"><span>-</span></div> 
+                                            <div class="product-add-item product-add-item-extra">5</div> 
+                                            <div class="product-add-item"><span>+</span></div> 
+                                        </div>
+                                        <div class="add-button">
+                                            <a href="#">
+                                                ADD TO CART
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>     
+            </div>
+        </section>
+        <!-- product-secion --> 
+        <!-- discription --> 
+        <section class="product-discription-item">
+            <div class="container">
+                <div class="product-discription-all-content"> 
+                    <div class="discription-left">
+                        <div class="product-discription">
+                            <h3>Discription</h3>
+                            <p class="font-work">A selection of four classic Spanish cheese and quince. Manchego
+                                with mellow sweetness; tangy Picos blue mountain rich, Vacherin-style Torta
+                                buttery washed-rind Musgo Lavado and sweet quince jam with a hint of
+                                tartness. Quintessentially Spanish.<br><br>
+                                A selection of four classic Spanish cheese and quince. Manchego with
+                                mellow sweetness; tangy Picos blue mountain rich, Vacherin-style Torta
+                                buttery washed-rind Musgo Lavado and sweet quince jam with a hint of
+                                tartness. Quintessentially Spanish.
+                            </p>
+                        </div>
+                        <div class="product-discription product-discription-extra">
+                            <h3>Tasting Notes</h3>
+                            <p class="font-work">In the event that any of the above is not available on the day of dispatch
+                                Brindisa will substitute any out of stock items with
+                                another similar product.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="discription-right">
+                        <div class="product-discription product-discription-extra">
+                            <h3>Discription</h3> 
+                            <div class="our-story-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59478.2211938297!2d5.5107672280358395!3d52.14335974084343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c64c08520de653%3A0xc9f82c31f3509867!2sBarneveld%2C%20Netherlands!5e1!3m2!1sen!2sbd!4v1730700108519!5m2!1sen!2sbd" width="100%" height="285" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <h4 class="font-jakarta">Vina San Rafael</h4>
+                            <span class="font-work">Chile, Maule Valley</span>
+                            <p class="font-work discription-text">'Dare to be yourself". That is the motto of the Chilean wine brand
+                                Oveja Negra. Not surprising, when you consider that the name Oveja
+                                Negra literally means 'black sheep'. A metaphor for an outsider
+                                or better yet: someone who likes to go his own way. The makers of
+                                Oveja Negra are the first winemakers to blend grapes from individual
+                                vineyards in the Maule Valley. Always with the aim of making the
+                                tastiest wines. Oveja Negra is made by a group of innovative
+                                entrepreneurs who founded the Chilean winery Viña San Rafael
+                                in 1998. Oveja Negra makes special Chilean wines that challenge
+                                you to be yourself.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- discription -->
+        <!-- featured-products -->
+        <section class="featured-section">
+            <div class="container">
+                <div class="all-featured-item">
+                    <div class="product-discription product-card-title">
+                        <h4>Discription</h4>
+                    </div>
+                    <div class="product-items">
+                        <!-- item -->
+                        <div class="product-card">
+                            <div class="product-card-image">
+                                <a href="#">
+                                    <img class="product-img" src="assets/img/dessert-item.png" alt="img">
+                                </a>
+                                <div class="product-view-icon">
+                                    <div class="product-card-view">
+                                        <img src="assets/img/icon/view-white.png" alt="icon">
+                                    </div>
+                                </div>
+                                <div class="product-icon">
+                                    <div class="heart-icon">
+                                        <img src="assets/img/heart-icon.svg" alt="icon">
+                                    </div>
+                                    <div class="flag-icon">
+                                        <img width="32px" height="32px" src="assets/img/flag-icon.svg" alt="icon">
+                                    </div>
+                                </div> 
+                            </div> 
+                            <div class="product-card-text">
+                                <h4>Cheeses</h4>
+                                <h5>Spanish Desserts</h5>
+                                <div class="reviews">
+                                    <div class="stars-iocn">
+                                        <img src="assets/img/star-icon.svg" alt="star">
+                                        <img src="assets/img/star-icon.svg" alt="star">
+                                        <img src="assets/img/star-icon.svg" alt="star">
+                                        <img src="assets/img/star-icon.svg" alt="star">
+                                        <img src="assets/img/star-icon.svg" alt="star"> 
+                                    </div>
+                                    <span>(271 Review)</span>
+                                </div>
+                                <p class="product-card-price">€ 50.00</p>
+                                <a href="#" class="card-button">Add To Cart</a>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <!-- item -->
+                        <div class="product-card">
+                            <div class="product-card-image">
+                                <a href="#">
+                                    <img class="product-img" src="assets/img/dessert-item.png" alt="img">
+                                </a>
+                                <div class="product-view-icon">
+                                    <div class="product-card-view">
+                                        <img src="assets/img/icon/view-white.png" alt="icon">
+                                    </div>
+                                </div>
+                                <div class="product-icon">
+                                    <div class="heart-icon">
+                                        <img src="assets/img/heart-icon.svg" alt="icon">
+                                    </div>
+                                    <div class="flag-icon">
+                                        <img width="32px" height="32px" src="assets/img/flag-icon.svg" alt="icon">
+                                    </div>
+                                </div> 
+                            </div> 
+                            <div class="product-card-text">
+                                <h4>Cheeses</h4>
+                                <h5>Spanish Desserts</h5>
+                                <div class="reviews">
+                                    <div class="stars-iocn">
+                                        <img src="assets/img/star-icon.svg" alt="star">
+                                        <img src="assets/img/star-icon.svg" alt="star">
+                                        <img src="assets/img/star-icon.svg" alt="star">
+                                        <img src="assets/img/star-icon.svg" alt="star">
+                                        <img src="assets/img/star-icon.svg" alt="star"> 
+                                    </div>
+                                    <span>(271 Review)</span>
+                                </div>
+                                <p class="product-card-price">€ 50.00</p>
+                                <a href="#" class="card-button">Add To Cart</a>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <!-- item -->
+                        <div class="product-card">
+                            <div class="product-card-image">
+                                <a href="#">
+                                    <img class="product-img" src="assets/img/dessert-item.png" alt="img">
+                                </a>
+                                <div class="product-view-icon">
+                                    <div class="product-card-view">
+                                        <img src="assets/img/icon/view-white.png" alt="icon">
+                                    </div>
+                                </div>
+                                <div class="product-icon">
+                                    <div class="heart-icon">
+                                        <img src="assets/img/heart-icon.svg" alt="icon">
+                                    </div>
+                                    <div class="flag-icon">
+                                        <img width="32px" height="32px" src="assets/img/flag-icon.svg" alt="icon">
+                                    </div>
+                                </div> 
+                            </div> 
+                            <div class="product-card-text">
+                                <h4>Cheeses</h4>
+                                <h5>Spanish Desserts</h5>
+                                <div class="reviews">
+                                    <div class="stars-iocn">
+                                        <img src="assets/img/star-icon.svg" alt="star">
+                                        <img src="assets/img/star-icon.svg" alt="star">
+                                        <img src="assets/img/star-icon.svg" alt="star">
+                                        <img src="assets/img/star-icon.svg" alt="star">
+                                        <img src="assets/img/star-icon.svg" alt="star"> 
+                                    </div>
+                                    <span>(271 Review)</span>
+                                </div>
+                                <p class="product-card-price">€ 50.00</p>
+                                <a href="#" class="card-button">Add To Cart</a>
+                            </div>
+                        </div>
+                        <!-- item -->
+                         
+                        <!-- item -->
+                        <div class="product-card product-card-bottom">
+                            <div class="product-card-image">
+                                <a href="#">
+                                    <img class="product-img" src="assets/img/cerveza-boqueron.png" alt="img">
+                                </a>
+                                <div class="product-view-icon">
+                                    <div class="product-card-view">
+                                        <img src="assets/img/icon/view-white.png" alt="icon">
+                                    </div>
+                                </div>
+                                <div class="product-icon">
+                                    <div class="heart-icon">
+                                        <img src="assets/img/heart-icon.svg" alt="icon">
+                                    </div>
+                                    <div class="flag-icon">
+                                        <img width="32px" height="32px" src="assets/img/flag-icon.svg" alt="icon">
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product-card-text">
+                                <h4>Drinks</h4>
+                                <h5>Cerveza er Boqueron</h5>
+                                <div class="reviews">
+                                    <div class="stars-iocn">
+                                        <img src="assets/img/star-icon.svg" alt="star">
+                                        <img src="assets/img/star-icon.svg" alt="star">
+                                        <img src="assets/img/star-icon.svg" alt="star">
+                                        <img src="assets/img/star-icon.svg" alt="star">
+                                        <img src="assets/img/star-icon.svg" alt="star"> 
+                                    </div>
+                                    <span>(35 Review)</span>
+                                </div>
+                                <p>€ 06.00</p>
+                                <div class="bottle-tow-button">
+                                    <a href="#" class="card-button bottle-button">Bottle
+                                        <span class="add-plus-white">
+                                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.49984 2.66675V13.3334M13.8332 8.00008L3.1665 8.00008" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="add-plus-black">
+                                            <svg width="17" height="16" viewBox="0 0 17 16" fill="#101F32" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.49984 2.66675V13.3334M13.8332 8.00008L3.1665 8.00008" stroke="#101F32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="card-button bottle-button">Box (6)
+                                        <span class="add-plus-white">
+                                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.49984 2.66675V13.3334M13.8332 8.00008L3.1665 8.00008" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="add-plus-black">
+                                            <svg width="17" height="16" viewBox="0 0 17 16" fill="#101F32" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.49984 2.66675V13.3334M13.8332 8.00008L3.1665 8.00008" stroke="#101F32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- featured-products -->
+        <!-- service-and-contact-section -->
+        <section class="service-contact">
+            <div class="container">
+                <div class="service-contact-content">
+                    <div class="contact-left-site">
+                        <h3>Get 15% Off Your<br>
+                            First Order!
+                        </h3>
+                        <span>Register Now</span>
+                    
+                        <div class="service-contact-Register">
+                            <div class="input-button font-work input-button-ectra">
+                                <input class="font-work" type="text" placeholder="Your Email Address">
+                                <a href="#">
+                                    Register 
+                                </a>
+                            </div> 
+                        </div> 
+                        <p>This form is protected by reCaptcha, the Google Privacy<br>
+                            Policy and Terms of Service apply.</p>
+                    </div>
+                    <div class="contact-right-site">
+                        <h3>Service And Contact</h3>
+                        <div class="contact-comment">
+                            <span>
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.6667 25.0002H16.6875M25 25.0002H25.0208M33.3333 25.0002H33.3542M43.75 25.0002C43.75 34.2049 35.3553 41.6668 25 41.6668C21.7932 41.6668 18.7744 40.9512 16.1347 39.6899L6.25 41.6668L9.15623 33.9169C7.31576 31.3384 6.25 28.2799 6.25 25.0002C6.25 15.7954 14.6447 8.3335 25 8.3335C35.3553 8.3335 43.75 15.7954 43.75 25.0002Z" stroke="#323B49" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>   
+                            </span>
+                            <div class="contact-comment-text">
+                                <h4>Do You Need Our Help?</h4>
+                                <p>We are happy to help you. Chat with usor Give feedback</p>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                            <div class="contact-social-text">
+                                <h5>Follow Us</h5>
+                                <p>On Social Media</p>
+                            </div>
+                            <div class="contact-social-icon">
+                                <a href="#" class="social-link">
+                                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 5.65054H5.22424V3.6948C5.22424 3.21596 5.81899 3.18005 6.00242 3.18005H7.89172V0.504562H6.00242C5.53284 0.48141 5.06305 0.546544 4.62139 0.696037C4.17972 0.845531 3.77533 1.07629 3.43259 1.37439C3.08985 1.6725 2.81586 2.03178 2.62715 2.43058C2.43843 2.82937 2.3389 3.25942 2.33455 3.6948V5.64979H0V8.32528H2.33455V14.5H5.22424V8.32603H7.55879L8 5.65054Z" fill="white"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.02664 12.4998C6.25483 12.5082 7.47258 12.2912 8.60918 11.8614C9.74578 11.4315 10.7786 10.7975 11.6476 9.99606C12.5166 9.19461 13.2045 8.24173 13.6713 7.19275C14.1381 6.14377 14.3746 5.0196 14.367 3.88553C14.367 3.75593 14.367 3.62553 14.361 3.49592C15.0039 3.06674 15.5589 2.53526 16 1.92639C15.3991 2.16948 14.7626 2.32926 14.1111 2.40057C14.7972 2.02209 15.3112 1.42645 15.5575 0.724351C14.9125 1.07696 14.2067 1.3245 13.4708 1.45617C13.0204 1.01347 12.4363 0.705868 11.7943 0.57321C11.1523 0.440552 10.4819 0.488947 9.87004 0.712129C9.25817 0.935311 8.73297 1.32299 8.36247 1.82497C7.99197 2.32694 7.79324 2.92007 7.79202 3.52753C7.79446 3.75989 7.82314 3.99139 7.87761 4.21825C6.57288 4.15816 5.29637 3.84571 4.13072 3.30116C2.96507 2.7566 1.93628 1.99207 1.11095 1.05707C0.693118 1.72426 0.565776 2.51323 0.754761 3.26392C0.943745 4.01461 1.4349 4.67081 2.1286 5.09942C1.60841 5.08256 1.09977 4.95317 0.643628 4.72167V4.76276C0.643114 5.4624 0.904494 6.1407 1.38349 6.6828C1.86249 7.2249 2.52968 7.59748 3.27206 7.73744C2.78974 7.85806 2.28408 7.87617 1.79309 7.79039C2.00312 8.39212 2.41168 8.91814 2.96157 9.29481C3.51147 9.67148 4.17516 9.87993 4.85974 9.89099C3.69656 10.734 2.26013 11.1914 0.781429 11.1895C0.520285 11.1906 0.259309 11.1769 0 11.1484C1.50172 12.0315 3.24619 12.5004 5.02664 12.4998Z" fill="white"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.94423 5.05762H0.32666V14.4964H2.94423V5.05762Z" fill="white"/>
+                                        <path d="M11.6909 5.05841C10.9941 4.81471 10.2372 4.79946 9.53107 5.01488C8.82494 5.2303 8.20666 5.66508 7.76676 6.25556V5.05841H5.1582V14.4972H7.76676V9.51778C7.75205 8.8868 7.9838 8.27473 8.41326 7.81035C8.53564 7.66752 8.6862 7.55125 8.8556 7.46875C9.02501 7.38624 9.20964 7.33927 9.39804 7.33074C9.6096 7.32672 9.8198 7.36527 10.016 7.44409C10.2122 7.5229 10.3904 7.64036 10.5399 7.7894C10.864 8.1266 11.041 8.57762 11.0323 9.04416V14.4994H13.9837V8.65284C14.058 7.88517 13.8729 7.11476 13.4576 6.46366C13.0422 5.81257 12.4205 5.31803 11.6909 5.05841Z" fill="white"/>
+                                        <path d="M1.63504 3.75325C2.53805 3.75325 3.27009 3.02498 3.27009 2.12662C3.27009 1.22826 2.53805 0.5 1.63504 0.5C0.732034 0.5 0 1.22826 0 2.12662C0 3.02498 0.732034 3.75325 1.63504 3.75325Z" fill="white"/>
+                                    </svg>  
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- service-and-contact-section -->
+        <!-- footer-section -->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-all-content">
+                    <div class="footer-leftsite">
+                        <a href="#">
+                            <img class="footer-logo" width="74px" height="74px" src="assets/img/footer-logo.png" alt="logo">
+                        </a>
+                        <p class="font-poppins">successfully completed over 200 
+                            large-scale projects for clients in 
+                            Bangladesh, including a significant 
+                            number of SaaS companies, 
+                            thriving startups, and educational 
+                            establishments.
+                        </p>
+                        <div class="footer-brand-logo">
+                            <a href="#">
+                                <img src="assets/img/paypal.png" alt="logo">
+                            </a>
+                            <a href="#">
+                                <img src="assets/img/stripe.png" alt="logo">
+                            </a>
+                            <a href="#">
+                                <img src="assets/img/id.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="nix-logo">
+                            <a href="#">
+                                <img src="assets/img/nix.png" alt="logo">
+                            </a>
+                            <span>< 18 years we do not sell alcohol < 25 years, show your ID</span>
+                        </div>
+                    </div>
+                    <div class="footer-rightsite">
+                        <div class="footer-all-page-content">
+                            <div class="footer-page">
+                                <h4>Pages</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Product</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-page footer-item">
+                                <h4>Food</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">Spanish Foods</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Spanish Drinks</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Spanish Hampers & Gifts</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kitchenware</a>
+                                    </li> 
+                                </ul>
+                            </div> 
+                            <div class="footer-page footer-social-item">
+                                <h4>Contact</h4>
+                                <div class="social">
+                                    <a href="#">
+                                        <img src="assets/img/icon/fb-icon.svg" alt="icon">
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/img/icon/towi.svg" alt="icon">
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/img/icon/lind.svg" alt="icon">
+                                    </a>
+                                </div>
+                                <div class="social-id">
+                                    <div class="email-phone">
+                                        <img src="assets/img/icon/phone.svg" alt="icon">
+                                        <span>+880 1728247398</span>
+                                    </div>
+                                    <div class="email-phone">
+                                        <img src="assets/img/icon/email.svg" alt="icon">
+                                        <span>info@example.com</span>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="footer-subscribe">
+                            <div class="input-button">
+                                <input type="text" placeholder="Your Email">
+                                <a href="#">
+                                    Subscribe 
+                                </a>
+                            </div>
+                            <span>Get 15% of your first order by subscribing to our newsletter</span>
+                        </div> 
+                    </div>
+                </div>s
+            </div>
+        </footer> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oak website</title>
+    <!-- swiper-js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- swiper-js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="stylesheet" href="assets/css/blog-responsive.css">
+</head>
+<body>
+    <!-- nav-secion -->
+    <div class="header-all">
+        <section class="nav-section">
+            <div class="nav">
+                <a href="#">
+                    <img class="logo" width="60px" height="60px" src="assets/img/logo.svg" alt="logo"> 
+                </a> 
+    
+                <input type="checkbox" id="check" name="nav-toggle"> 
+                <label for="check">
+                    <span class="menu">
+                        <img src="assets/img/icon/menu-icon.svg" alt="icon">
+                    </span>
+                    <span class="menu-close">
+                        <img src="assets/img/icon/menu-x.svg" alt="icon">
+                    </span>
+                </label>
+    
+                <ul class="nav-list-items">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Product</a>
+                    </li>
+                    <li>
+                        <a href="#">Product Categories</a>
+                    </li>
+                    <li>
+                        <a href="#">Our Story</a>
+                    </li>
+                    <li>
+                        <a class="nav-active" href="#">Blog</a>
+                    </li>
+                </ul> 
+                <div class="nav-icons">
+                    <a href="#">
+                        <img width="23px" height="23px" src="assets/img/icon/ser-icon.svg" alt="icon">
+                    </a>
+                    <a href="#">
+                        <img width="23px" height="23px" src="assets/img/icon/user-icon.svg" alt="icon">
+                    </a>
+                    <a href="#">
+                        <img width="23px" height="23px" src="assets/img/icon/in-icon.svg" alt="icon">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- nav-secion -->
+        <!-- hero-section -->
+        <div class="hero-section" style="background-image: url(./assets/img/blog-bg.jpg);">
+            <div class="container">
+                <div class="hero-all-content">
+                    <p class="font-work">Recipes, Pairing Guides</p>
+                    <h4 class="font-jakarta">Inside Get Your Guide</h4>
+                </div>
+            </div>
+        </div> 
+        <!-- hero-section -->
+        <!-- search-articles-section -->
+        <div class="search-articles-section">
+            <div class="container">
+                <div class="search-all-content">
+                    <div class="search-box">
+                        <input type="search" id="search" placeholder="Search Articles">
+                        <label for="search">
+                            <span>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5 16.5C14.1569 14.1569 15.3431 15.3431 13 13M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z" stroke="#101F32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="selection-item">
+                        <select name="Categorie" id="Categorie">
+                            <option value="categories">Categories</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- search-articles-section -->
+    </div>
+    <!-- popular-tag -->
+    <section class="popular-tag">
+        <div class="container">
+            <div class="all-popular-tag"> 
+                <div class="popular-tag-title">
+                    <h3>Popular Tag</h3>
+                </div>
+                <div class="">
+                    <div class="special-all-item"> 
+                        <div class="product-list-text">
+                            <ul>
+                                <li>
+                                    <a href="#">Meats</a>
+                                </li>
+                                <li>
+                                    <a class="active" href="#">Cheeses</a>
+                                </li>
+                                <li>
+                                    <a href="#">Wines</a>
+                                </li>
+                                <li>
+                                    <a href="#">Meats</a>
+                                </li>
+                                <li>
+                                    <a href="#">Wines</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cheeses</a>
+                                </li> 
+                            </ul>
+                        </div>
+                        <div class="special-food">
+                            <!-- item -->
+                            <div class="special-food-img">
+                                <div class="special-product-img">
+                                    <a href="#">
+                                        <img src="assets/img/spacial-produt-01.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="special-food-text">
+                                    <span>Alec Whitten • 17 Jan 2024</span>
+                                    <h3>Despaña Chistorra Spaghetti</h3>
+                                    <p>Like to know the secrets of transforming a 2-14 team into a 3x Super Dynasty?</p>
+                                    <div class="special-two-button">
+                                        <a href="#">Leadership</a>
+                                        <a href="#">Management</a> 
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <!-- item -->
+                            <div class="special-food-img">
+                                <div class="special-product-img">
+                                    <a href="#">
+                                        <img src="assets/img/spacial-produt-02.png" alt="img">
+                                    </a>
+                                </div> 
+                                <div class="special-food-text">
+                                    <span>Alec Whitten • 17 Jan 2024</span>
+                                    <h3>Despaña Chistorra Spaghetti</h3>
+                                    <p>Mental models are simple expressions of complex processes or relationships.</p>
+                                    <div class="special-two-button">
+                                        <a href="#">Leadership</a>
+                                        <a href="#">Management</a> 
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <!-- item -->
+                            <div class="special-food-img">
+                                <div class="special-product-img">
+                                    <a href="#">
+                                        <img src="assets/img/spacial-produt-03.png" alt="img">
+                                    </a>
+                                </div>  
+                                <div class="special-food-text">
+                                    <span>Alec Whitten • 17 Jan 2024</span>
+                                    <h3>Despaña Chistorra Spaghetti</h3>
+                                    <p>Introduction to Wireframing and its Principles. Learn from the best in the industry.</p>
+                                    <div class="special-two-button">
+                                        <a href="#">Leadership</a>
+                                        <a href="#">Management</a> 
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <!-- item -->
+                            <div class="special-food-img special-item">
+                                <div class="special-product-img">
+                                    <a href="#">
+                                        <img src="assets/img/spacial-produt-01.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="special-food-text">
+                                    <span>Alec Whitten • 17 Jan 2024</span>
+                                    <h3>Despaña Chistorra Spaghetti</h3>
+                                    <p>Like to know the secrets of transforming a 2-14 team into a 3x Super Dynasty?</p>
+                                    <div class="special-two-button">
+                                        <a href="#">Leadership</a>
+                                        <a href="#">Management</a> 
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <!-- item -->
+                            <div class="special-food-img special-item">
+                                <div class="special-product-img">
+                                    <a href="#">
+                                        <img src="assets/img/spacial-produt-02.png" alt="img">
+                                    </a>
+                                </div> 
+                                <div class="special-food-text">
+                                    <span>Alec Whitten • 17 Jan 2024</span>
+                                    <h3>Despaña Chistorra Spaghetti</h3>
+                                    <p>Mental models are simple expressions of complex processes or relationships.</p>
+                                    <div class="special-two-button">
+                                        <a href="#">Leadership</a>
+                                        <a href="#">Management</a> 
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <!-- item -->
+                            <div class="special-food-img special-item">
+                                <div class="special-product-img">
+                                    <a href="#">
+                                        <img src="assets/img/spacial-produt-03.png" alt="img">
+                                    </a>
+                                </div>  
+                                <div class="special-food-text">
+                                    <span>Alec Whitten • 17 Jan 2024</span>
+                                    <h3>Despaña Chistorra Spaghetti</h3>
+                                    <p>Introduction to Wireframing and its Principles. Learn from the best in the industry.</p>
+                                    <div class="special-two-button">
+                                        <a href="#">Leadership</a>
+                                        <a href="#">Management</a> 
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- popular-tag -->
+    <!-- footer-section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-all-content">
+                <div class="footer-leftsite">
+                    <a href="#">
+                        <img class="footer-logo" width="74px" height="74px" src="assets/img/footer-logo.png" alt="logo">
+                    </a>
+                    <p class="font-poppins">successfully completed over 200 
+                        large-scale projects for clients in 
+                        Bangladesh, including a significant 
+                        number of SaaS companies, 
+                        thriving startups, and educational 
+                        establishments.
+                    </p>
+                    <div class="footer-brand-logo">
+                        <a href="#">
+                            <img src="assets/img/paypal.png" alt="logo">
+                        </a>
+                        <a href="#">
+                            <img src="assets/img/stripe.png" alt="logo">
+                        </a>
+                        <a href="#">
+                            <img src="assets/img/id.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="nix-logo">
+                        <a href="#">
+                            <img src="assets/img/nix.png" alt="logo">
+                        </a>
+                        <span>< 18 years we do not sell alcohol < 25 years, show your ID</span>
+                    </div>
+                </div>
+                <div class="footer-rightsite">
+                    <div class="footer-all-page-content">
+                        <div class="footer-page">
+                            <h4>Pages</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Product</a>
+                                </li>
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-page footer-item">
+                            <h4>Food</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Spanish Foods</a>
+                                </li>
+                                <li>
+                                    <a href="#">Spanish Drinks</a>
+                                </li>
+                                <li>
+                                    <a href="#">Spanish Hampers & Gifts</a>
+                                </li>
+                                <li>
+                                    <a href="#">Kitchenware</a>
+                                </li> 
+                            </ul>
+                        </div> 
+                        <div class="footer-page footer-social-item">
+                            <h4>Contact</h4>
+                            <div class="social">
+                                <a href="#">
+                                    <img src="assets/img/icon/fb-icon.svg" alt="icon">
+                                </a>
+                                <a href="#">
+                                    <img src="assets/img/icon/towi.svg" alt="icon">
+                                </a>
+                                <a href="#">
+                                    <img src="assets/img/icon/lind.svg" alt="icon">
+                                </a>
+                            </div>
+                            <div class="social-id">
+                                <div class="email-phone">
+                                    <img src="assets/img/icon/phone.svg" alt="icon">
+                                    <span>+880 1728247398</span>
+                                </div>
+                                <div class="email-phone">
+                                    <img src="assets/img/icon/email.svg" alt="icon">
+                                    <span>info@example.com</span>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="footer-subscribe">
+                        <div class="input-button">
+                            <input type="text" placeholder="Your Email">
+                            <a href="#">
+                                Subscribe 
+                            </a>
+                        </div>
+                        <span>Get 15% of your first order by subscribing to our newsletter</span>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>
