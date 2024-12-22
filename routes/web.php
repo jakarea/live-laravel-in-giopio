@@ -11,6 +11,10 @@ use App\Http\Controllers\FrontendController;
 Route::get('/', [FrontendController::class,'homePage']);
 Route::get('/about', [FrontendController::class,'aboutPage']);
 Route::get('/blog', [FrontendController::class, 'blogPage']);
+Route::get('/contact', [FrontendController::class, 'contactPage']);
+Route::post('/contact', [FrontendController::class, 'contactPost']);
+
+
 
 // Route::get('/hello', [TestController::class, 'index']);
 
