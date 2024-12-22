@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use \Session;
 
 class FrontendController extends Controller
 {
@@ -23,8 +24,6 @@ class FrontendController extends Controller
 
     public function contactPage(Request $request)
     {
-
-
         $question = $request->q;
         $user_name = $request->name;
         $user_email = $request->email;
@@ -49,5 +48,17 @@ class FrontendController extends Controller
         $user_subject = $request->subject;
 
         return [$user_name, $user_email, $user_message];
+    }
+
+
+    public function viewSession(Request $request){
+        
+       // $request->session()->put('key', 1);
+        $session_id = $request->session()->regenerate();
+        $key = $request->session()->get('key');
+        $request->session()->put('user',['member'=>'John Doe']);
+        $request->session()->push('user.teams', 'developers');
+        echo csrf_token();
+        return Session::all();
     }
 }

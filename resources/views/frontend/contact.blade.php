@@ -6,6 +6,15 @@
             <h3 class="contact-form-title font-jakarta">Have An Idea? Just Leave<br>
                 a Message!
             </h3>
+            {{ session('name') }}
+            <ul>
+                <li>key:{{session('key')}}</li>
+                <li>key2:{{session('key2')}}</li>
+                <li>key3:{{session('key3')}}</li>
+               @if(session('token'))
+                <li>token: {{session('token')}}</li>
+                @endif
+            </ul>
             <div class="contact-number font-jakarta">
                 <div class="number-email">
                     <span>
@@ -26,8 +35,6 @@
                 </div>
             </div>
         
-
-          
             <form method="POST" >
                 @csrf
                 <div class="all-contact-form font-work">
