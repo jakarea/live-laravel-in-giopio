@@ -6,6 +6,8 @@ use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\Test2Controller;
 use App\Http\Controllers\FrontendController;
+use Illuminate\Support\Facades\Session;
+
 // Get|Post|Put|Patch|Delete
 
 Route::get('/', [FrontendController::class,'homePage']);
@@ -14,9 +16,17 @@ Route::get('/blog', [FrontendController::class, 'blogPage']);
 Route::get('/contact', [FrontendController::class, 'contactPage']);
 Route::post('/contact', [FrontendController::class, 'contactPost']);
 
+Route::get('/view-session', [FrontendController::class, 'viewSession']);
 
 
-// Route::get('/hello', [TestController::class, 'index']);
+Route::get('/hello', function () {
+   Session::put('key', 'value');
+   Session::put('key2', 'This is another set of key2');
+   Session::put('key3', 'value3');
+   Session::put('key4', 'value4');
+   Session::put('token', 'thisisEncryptedTiken');
+   return 'Session sets';
+});
 
 
 // Route::get('/view', [Test2Controller::class, 'create']);
